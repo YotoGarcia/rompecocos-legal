@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — Rompecocos</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2d6a4f;
+    --border: #e0e0e0;
+    --card: #f7f7f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141414;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --accent: #74c69d;
+      --border: #2e2e2e;
+      --card: #1e1e1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 28px; }
+  h1 { font-size: 1.6rem; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 10px; color: var(--accent); }
+  h3 { font-size: 1rem; margin: 20px 0 6px; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toggle { display: flex; gap: 8px; margin-top: 16px; }
+  .toggle button {
+    font: inherit; font-size: 0.9rem; padding: 6px 14px; cursor: pointer;
+    background: var(--card); color: var(--fg);
+    border: 1px solid var(--border); border-radius: 6px;
+  }
+  .toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .box {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px 18px; margin: 18px 0;
+  }
+  .box p:first-child { margin-top: 0; }
+  .box p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.94rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  code { background: var(--card); padding: 2px 5px; border-radius: 4px; font-size: 0.9em; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Rompecocos</h1>
+  <p class="meta" data-es>Política de Privacidad · Última actualización: 21 de octubre de 2026</p>
+  <p class="meta" data-en hidden>Privacy Policy · Last updated: October 21, 2026</p>
+  <div class="toggle">
+    <button type="button" id="btn-es" aria-pressed="true">Español</button>
+    <button type="button" id="btn-en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- ============ ESPAÑOL ============ -->
+<section data-es>
+
+  <h2>1. Quiénes somos</h2>
+  <p>Rompecocos es una aplicación móvil de acertijos desarrollada y operada por <strong>JG Software</strong>, bajo responsabilidad de Jonathan García, persona natural domiciliada en Colombia.</p>
+  <p>Contacto para asuntos de privacidad: <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a></p>
+
+  <h2>2. Qué datos recopilamos</h2>
+
+  <h3>Si inicias sesión con Google</h3>
+  <table>
+    <tr><th>Dato</th><th>Para qué se usa</th></tr>
+    <tr><td>Nombre de la cuenta</td><td>Identificarte dentro de la app y mostrarte en las tablas de clasificación</td></tr>
+    <tr><td>Correo electrónico</td><td>Identificar tu cuenta de forma única</td></tr>
+    <tr><td>Foto de perfil (URL)</td><td>Mostrar tu avatar en la app y en las tablas de clasificación</td></tr>
+    <tr><td>Identificador de usuario</td><td>Asociar tu progreso a tu cuenta</td></tr>
+    <tr><td>Actividad de juego</td><td>Puntajes, aciertos, rachas, monedas y acertijos resueltos</td></tr>
+  </table>
+
+  <h3>Si juegas como invitado</h3>
+  <p>Se crea una sesión anónima que no está asociada a ningún dato personal. No recopilamos tu nombre ni tu correo. Tu progreso se guarda vinculado a un identificador anónimo generado automáticamente.</p>
+
+  <h3>Lo que no hacemos</h3>
+  <p>No mostramos publicidad, no usamos herramientas de analítica de terceros, no vendemos ni compartimos tus datos con fines comerciales, y no recopilamos tu ubicación, tus contactos ni el contenido de tu dispositivo.</p>
+
+  <h2>3. Información visible para otros usuarios</h2>
+  <div class="box">
+    <p><strong>Tu nombre y tu foto de perfil son visibles para otros jugadores</strong> en las tablas de clasificación global y semanal de la aplicación.</p>
+    <p>Tu correo electrónico nunca es visible para otros usuarios. Las cuentas de invitado no aparecen en ninguna tabla de clasificación.</p>
+  </div>
+
+  <h2>4. Dónde se almacenan tus datos</h2>
+  <p>Utilizamos los servicios de Firebase, de Google LLC, para autenticación y almacenamiento de datos. Tus datos se guardan en los servidores de Google y están sujetos también a las políticas de privacidad de Google.</p>
+  <p>Servicios de Firebase que utilizamos: Authentication (inicio de sesión), Cloud Firestore (base de datos) y App Check (protección contra uso no autorizado).</p>
+  <p>La transmisión de datos entre la aplicación y los servidores está cifrada.</p>
+
+  <h2>5. Durante cuánto tiempo conservamos tus datos</h2>
+  <p>Conservamos tus datos mientras tu cuenta exista. Si eliminas tu cuenta, tus datos se borran de forma inmediata y permanente, sin posibilidad de recuperación.</p>
+
+  <h2 id="eliminar">6. Cómo eliminar tu cuenta y tus datos</h2>
+
+  <h3>Desde la aplicación</h3>
+  <p>Abre Rompecocos, entra en <strong>Perfil</strong> y selecciona <strong>Eliminar cuenta</strong>. Se te pedirá confirmar tu identidad con tu cuenta de Google. El borrado es inmediato e incluye tu perfil, tu progreso, tus puntajes y tu presencia en las tablas de clasificación.</p>
+
+  <h3>Por correo electrónico</h3>
+  <p>Si no puedes acceder a la aplicación, escribe a <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a> desde la misma dirección de correo con la que te registraste, indicando en el asunto <code>Eliminar cuenta Rompecocos</code>. Procesaremos la solicitud en un plazo máximo de 30 días.</p>
+
+  <h3>Qué se elimina</h3>
+  <p>Se eliminan todos los datos asociados a tu cuenta: nombre, correo, foto, puntajes, aciertos, rachas, monedas, acertijos resueltos y registros en las tablas de clasificación. No conservamos copias.</p>
+
+  <h3>Sesiones de invitado</h3>
+  <p>El progreso guardado en una sesión de invitado no está asociado a ningún dato personal ni a una identidad que podamos verificar, por lo que no es posible identificarlo ni eliminarlo a petición. Ese registro contiene únicamente datos de juego (puntajes y acertijos resueltos) vinculados a un identificador anónimo generado automáticamente. Si quieres tener control sobre tus datos, inicia sesión con una cuenta de Google.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>De acuerdo con la Ley 1581 de 2012 de Colombia y demás normativa aplicable, tienes derecho a conocer, actualizar, rectificar y suprimir tus datos personales, así como a revocar la autorización otorgada para su tratamiento.</p>
+  <p>Para ejercer cualquiera de estos derechos, escribe a <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a>.</p>
+
+  <h2>8. Menores de edad</h2>
+  <p>Rompecocos está dirigida a personas de <strong>13 años o más</strong>. No recopilamos de forma consciente datos personales de menores de 13 años. Si eres madre, padre o tutor y crees que un menor de 13 años nos ha proporcionado datos personales, escríbenos a <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a> y procederemos a eliminarlos.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Podemos actualizar esta política ocasionalmente. La fecha de la última actualización aparece al inicio de este documento. Si los cambios son significativos, lo avisaremos dentro de la aplicación.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Para cualquier duda sobre esta política o sobre el tratamiento de tus datos:<br>
+  <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a></p>
+
+</section>
+
+<!-- ============ ENGLISH ============ -->
+<section data-en hidden>
+
+  <h2>1. Who we are</h2>
+  <p>Rompecocos is a mobile riddle game developed and operated by <strong>JG Software</strong>, under the responsibility of Jonathan García, an individual based in Colombia.</p>
+  <p>Privacy contact: <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a></p>
+
+  <h2>2. What data we collect</h2>
+
+  <h3>If you sign in with Google</h3>
+  <table>
+    <tr><th>Data</th><th>Purpose</th></tr>
+    <tr><td>Account name</td><td>Identify you within the app and display you on leaderboards</td></tr>
+    <tr><td>Email address</td><td>Uniquely identify your account</td></tr>
+    <tr><td>Profile photo (URL)</td><td>Display your avatar in the app and on leaderboards</td></tr>
+    <tr><td>User identifier</td><td>Associate your progress with your account</td></tr>
+    <tr><td>Gameplay activity</td><td>Scores, correct answers, streaks, coins and solved riddles</td></tr>
+  </table>
+
+  <h3>If you play as a guest</h3>
+  <p>An anonymous session is created that is not linked to any personal data. We do not collect your name or email. Your progress is stored against an automatically generated anonymous identifier.</p>
+
+  <h3>What we do not do</h3>
+  <p>We do not show advertising, we do not use third-party analytics tools, we do not sell or share your data for commercial purposes, and we do not collect your location, your contacts or the contents of your device.</p>
+
+  <h2>3. Information visible to other users</h2>
+  <div class="box">
+    <p><strong>Your name and profile photo are visible to other players</strong> on the app's global and weekly leaderboards.</p>
+    <p>Your email address is never visible to other users. Guest accounts do not appear on any leaderboard.</p>
+  </div>
+
+  <h2>4. Where your data is stored</h2>
+  <p>We use Firebase services, provided by Google LLC, for authentication and data storage. Your data is stored on Google's servers and is also subject to Google's privacy policies.</p>
+  <p>Firebase services we use: Authentication (sign-in), Cloud Firestore (database) and App Check (protection against unauthorized use).</p>
+  <p>Data transmitted between the app and our servers is encrypted.</p>
+
+  <h2>5. How long we keep your data</h2>
+  <p>We keep your data for as long as your account exists. If you delete your account, your data is deleted immediately and permanently, with no possibility of recovery.</p>
+
+  <h2 id="delete">6. How to delete your account and data</h2>
+
+  <h3>From the app</h3>
+  <p>Open Rompecocos, go to <strong>Profile</strong> and select <strong>Delete account</strong>. You will be asked to confirm your identity with your Google account. Deletion is immediate and includes your profile, progress, scores and your presence on the leaderboards.</p>
+
+  <h3>By email</h3>
+  <p>If you cannot access the app, write to <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a> from the same email address you registered with, using the subject line <code>Delete Rompecocos account</code>. We will process the request within 30 days.</p>
+
+  <h3>What gets deleted</h3>
+  <p>All data associated with your account is deleted: name, email, photo, scores, correct answers, streaks, coins, solved riddles and leaderboard records. We keep no copies.</p>
+
+  <h3>Guest sessions</h3>
+  <p>Progress saved in a guest session is not associated with any personal data or with an identity we can verify, so it cannot be identified or deleted on request. That record contains only gameplay data (scores and solved riddles) linked to an automatically generated anonymous identifier. If you want control over your data, sign in with a Google account.</p>
+
+  <h2>7. Your rights</h2>
+  <p>Under Colombia's Law 1581 of 2012 and other applicable regulations, you have the right to access, update, correct and delete your personal data, as well as to withdraw the consent you have given for its processing.</p>
+  <p>To exercise any of these rights, write to <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a>.</p>
+
+  <h2>8. Minors</h2>
+  <p>Rompecocos is intended for people aged <strong>13 and over</strong>. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe a child under 13 has provided us with personal data, please write to <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a> and we will delete it.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this policy from time to time. The date of the last update appears at the top of this document. If the changes are significant, we will give notice within the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>For any questions about this policy or about how your data is handled:<br>
+  <a href="mailto:soporte.jgapps@gmail.com">soporte.jgapps@gmail.com</a></p>
+
+</section>
+
+<footer>
+  <p>JG Software · Rompecocos</p>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var btnEs = document.getElementById('btn-es');
+  var btnEn = document.getElementById('btn-en');
+
+  function show(lang) {
+    var isEs = lang === 'es';
+    document.querySelectorAll('[data-es]').forEach(function (el) { el.hidden = !isEs; });
+    document.querySelectorAll('[data-en]').forEach(function (el) { el.hidden = isEs; });
+    btnEs.setAttribute('aria-pressed', String(isEs));
+    btnEn.setAttribute('aria-pressed', String(!isEs));
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('rc-privacy-lang', lang); } catch (e) {}
+  }
+
+  btnEs.addEventListener('click', function () { show('es'); });
+  btnEn.addEventListener('click', function () { show('en'); });
+
+  var saved = null;
+  try { saved = localStorage.getItem('rc-privacy-lang'); } catch (e) {}
+  if (saved === 'en' || saved === 'es') {
+    show(saved);
+  } else if ((navigator.language || '').slice(0, 2).toLowerCase() === 'en') {
+    show('en');
+  }
+})();
+</script>
+
+</body>
+</html>
